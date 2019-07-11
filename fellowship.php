@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fellowship of the ring</title>
+  <link rel="stylesheet" href="fellowship/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Cinzel:900" rel="stylesheet">
+</head>
+<?php include 'partials/navbar.php' ?>
+
+<body>
+<div id="app" class="container">
+  <div class="row title-container">
+    <h1 class="title col-md-10">Select your fellows</h1>
+    <div class="points-left col-md-2 box-shadow">
+      <div v-if=pointsLeft!=0>
+        <p>Points left</p>
+        <h2>{{pointsLeft}}</h2>
+      </div>
+      <div v-else>
+        <p>Fellowship</p>
+        <h3>Complete</h3>
+      </div>
+    </div>
+  </div>
+  <ul class="row list-of-fellows">
+    <li v-for="fellow in fellows" v-on:click="clickOne(fellow)" class="col-md-4 fellow">
+      <div class="inner box-shadow" :class="{active:selectedFellows.includes(fellow)}">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>{{fellow.name}}</h1>
+            <h2>Race: {{fellow.race}}</h2>
+            <h2>Age: {{fellow.age}}</h2>
+          </div>
+          <div class="fellow-points col-md-6">
+            <h2>{{fellow.score}}</h2>
+            <p>points</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="fellowship/index.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Harry";
+    src: url("HARRYP__.TTF");
+}
+
+body {
+    background-color: #1e182a;
+}
+
+h1 {
+    font-family: "Harry", serif;
+    font-size: 12em;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px #f98916;
+}
+
+img.loading {
+    height: 250px;
+    margin: 0 auto;
+}
+
+p.result {
+    font-family: "Harry", serif;
+    color: #f98916;
+    font-size: 10em;
+    margin: 50px;
+}
+
+button {
+    font-family: "Kanit", serif;
+    background-color: white;
+    color: #1e182a;
+    font-size: 2em;
+    padding: 10px 200px;
+    border: none;
+    border-radius: 2px;
+    transition: all 150ms ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f98916;;
+}
+
+button:disabled {
+    background-color: #939393;
+
+}
