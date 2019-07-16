@@ -1,0 +1,121 @@
+body {
+    background-image: url("assets/lightpaperfibers.png");
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+}
+
+div.buttons {
+    text-align: center;
+    margin: 0 auto;
+}
+
+button.ryan-button {
+    margin: 0 20px;
+    z-index: 1;
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: #454543;
+    font-size: 1.5em;
+    border: none;
+    transition: all 200ms ease-in-out;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "Monoton", "serif";
+    -webkit-box-shadow: 10px 10px 43px -10px #757575;
+    -moz-box-shadow: 10px 10px 43px -10px #757575;
+    box-shadow: 10px 10px 43px -10px #757575;
+}
+
+button:active {
+    -webkit-box-shadow: none;
+    transform: translate(8px, 8px);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #767674;
+}
+
+button#addRyan:active {
+    background-color: #00d701;
+}
+
+button#removeRyan:active {
+    background-color: #d70026;
+}
+
+h1.ryan-title {
+    text-shadow: 4px 4px 2px #969696;
+    font-family: "Monoton", "serif";
+    font-size: 5em;
+    text-align: center;
+    color: #454543;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@keyframes opacityPop {
+    0% {
+        color: #d70026;
+    }
+}
+
+h1.tooManyRyans {
+    animation: opacityPop 700ms ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 4em;
+}
+
+h1.tooManyRyans span {
+    font-size: 1.8em;
+}
+
+div.ryan-counter {
+    position: absolute;
+    top: calc(100% - 200px);
+    left: calc(100% - 200px);
+    font-family: "Monoton", "serif";
+    color: #454543;
+    text-align: center;
+}
+
+div.ryan-counter h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+div.ryan-counter h3 {
+    font-size: 2em;
+    font-weight: 700;
+
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.bounce-enter-active {
+    animation: bounce-in 0.5s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
