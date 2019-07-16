@@ -39,8 +39,8 @@
 <body>
 <?php include 'partials/navbar.php' ?>
 <div class="titles">
-  <h1>Welcome</h1>
-  <h2>to TA mentor program</h2>
+  <h1>Vitaj </h1>
+  <h2>v Selenide tréningovom centre</h2>
 </div>
 </body>
 </html>
