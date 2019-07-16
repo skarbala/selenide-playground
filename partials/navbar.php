@@ -1,11 +1,12 @@
 <?php
 $navigation = [
-    "savings calculator",
-    "spelleology",
-    "fellowship",
-    "waitforit",
-    "tabulka",
-    "sortinghat"
+    "Gosslingator",
+    "Savings Calculator",
+    "Spelleology",
+    "Sorting Hat",
+    "Fellowship",
+    "Wait for it",
+    "Tabulka",
 ];
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");
 
