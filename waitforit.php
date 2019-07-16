@@ -75,6 +75,13 @@
             <input type="text" class="form-control" id="waitForProperty" placeholder="This input will get a class">
         </div>
     </div>
+    <div class="row">
+        <h2>Blur!</h2>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="waitForBlur"
+                   placeholder="This input can be blured">
+        </div>
+    </div>
 
     <div class="current-wait-time text-center"></div>
 </div>
