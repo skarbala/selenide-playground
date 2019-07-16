@@ -16,16 +16,16 @@
 
 <?php include 'partials/navbar.php' ?>
 <div id="app">
-    <div class="text-center">
+    <div class="text-center col-md-4 offset-md-4">
         <h1>Sorting hat</h1>
         <button :disabled="sortDisabled" v-on:click="sort()">SORT</button>
         <div v-if="!loading">
             <p class="result">{{result}}</p>
         </div>
+        <img class="loading" v-if="loading" src="img/loading.gif" alt=""></div>
 </div>
-    <div class="row">
-            <img class="loading" v-if="loading" src="img/loading.gif" alt=""></div>
-    </div>
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 <script src="sortinghat/index.js"></script>

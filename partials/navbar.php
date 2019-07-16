@@ -4,7 +4,6 @@ $navigation = [
     "spelleology",
     "fellowship",
     "waitforit",
-    "disappear",
     "tabulka",
     "sortinghat"
 ];

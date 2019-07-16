@@ -38,5 +38,5 @@ const vue = new Vue({
 ;
 
 function getRandomResponseTime() {
-    return Math.round(Math.random() * (7000 - 1000) + 1000);
+    return Math.round(Math.random() * (2500 - 1000) + 1000);
 }
