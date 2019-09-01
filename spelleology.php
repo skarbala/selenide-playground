@@ -17,7 +17,7 @@
 
 <div id="app" class="container-fluid">
   <modal v-if="showModal" @close="showModal = false">
-    <h2 slot="header">{{selectedSpell.spell}}</h2>
+    <h2 slot="header">{{selectedSpell.name}}</h2>
     <h3 slot="body">{{selectedSpell.effect.charAt(0).toUpperCase() + selectedSpell.effect.slice(1)}}</h3>
     <h4 slot="body">{{selectedSpell.type}}</h4>
   </modal>
