@@ -62,6 +62,7 @@ ul.spells {
     vertical-align: middle;
     font-size: 2em;
     transition: all 200ms ease-in-out;
+    text-transform: lowercase;
     div.inner {
       padding: 10px;
       cursor: pointer;
