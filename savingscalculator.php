@@ -90,7 +90,12 @@
                step="1"
                id="emailInput">
       </div>
+      <button class="btn btn-default btn-block btn-primary" data-test="calculate"
+      v-on:click="calculate()">
+      Calculate
+      </button>
       <button class="btn btn-block"
+      data-test="apply-for-saving"
               v-on:click="applyForSaving()"
               v-bind:class="{ 'btn-success': !savingButtonDisabled }"
               :disabled="savingButtonDisabled">Apply for saving
