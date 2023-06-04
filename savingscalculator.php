@@ -57,7 +57,7 @@
                 v-on:change="calculate()"
                 id="fundSelect">
           <option value="" disabled selected>Select your fund</option>
-          <option v-for="product in products" v-bind:value="product">{{ product.name }}</option>
+          <option v-for="product in products" v-bind:value="product.id">{{ product.name }}</option>
         </select>
       </div>
 
