@@ -21,6 +21,7 @@ const app = new Vue({
             years: '',
             email: ''
         },
+        selectedFundId: '',
         calculated: false,
         appliedSavings: [],
         selectedSaving: '',
@@ -38,6 +39,7 @@ const app = new Vue({
         }
     },
     computed: {
+
         savingButtonDisabled: function () {
             return !(
                 this.newSaving.fund &&
@@ -53,7 +55,11 @@ const app = new Vue({
 
 
     methods: {
+        selectFund: function () {
+            return this.newSaving.fund = this.products.find(fund => fund.id == this.selectedFundId)
+        },
         calculate: function () {
+            this.selectFund()
             if (validate(this.newSaving)) {
                 this.newSaving.totalIncome = calculateFinalSaving(
                     this.newSaving.oneTimeInvestment,

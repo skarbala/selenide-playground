@@ -53,10 +53,10 @@
       <h2>Request saving</h2>
       <div class="input-group mb-3">
         <select class="form-control"
-                v-model="newSaving.fund"
+                v-model="selectedFundId"
                 v-on:change="calculate()"
                 id="fundSelect">
-          <option value="" disabled selected>Select your fund</option>
+          <option value="" disabled>Select your fund</option>
           <option v-for="product in products" v-bind:value="product.id">{{ product.name }}</option>
         </select>
       </div>
